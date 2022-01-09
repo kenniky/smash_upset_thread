@@ -621,11 +621,8 @@ if __name__ == '__main__':
     sets_data = {}
 
     if post_id == 'none':
-        # smashbros = reddit.subreddit('smashbros')
-        # post = smashbros.submit(title='{} - {} Upset Thread'.format(tournament_name, event_name), selftext=DISCLAIMER_STRING, flair_id=flair_id)
-
-        smashbros = reddit.subreddit('kenniky_sandbox')
-        post = smashbros.submit(title='{} - {} Upset Thread'.format(tournament_name, event_name), selftext=DISCLAIMER_STRING)
+        smashbros = reddit.subreddit('smashbros')
+        post = smashbros.submit(title='{} - {} Upset Thread'.format(tournament_name, event_name), selftext=DISCLAIMER_STRING, flair_id=flair_id)
 
         print('created post in /r/{} with id {}'.format(smashbros.display_name, post.id))
     else:
